@@ -5,8 +5,8 @@ interface CharacterListErrorProps {
   error: unknown;
 }
 
-const CharacterListError = ({ error }: CharacterListErrorProps) => {
-  return <Alert severity="error">{getErrorMessage(error)}</Alert>;
-};
+const CharacterListError = ({ error }: CharacterListErrorProps) => (
+  <Alert severity="error">{getErrorMessage(error)}</Alert>
+);
 
 export default CharacterListError;
